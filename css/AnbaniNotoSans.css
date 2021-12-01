@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Anbani Noto Sans', 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/AnbaniNotoSans-Regular.eot');
+    src: url('../fonts/AnbaniNotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AnbaniNotoSans-Regular.woff2') format('woff2'),
+         url('../fonts/AnbaniNotoSans-Regular.woff') format('woff'),
+         url('../fonts/AnbaniNotoSans-Regular.ttf') format('truetype'),
+         url('../fonts/AnbaniNotoSans-Regular.svg#anbani_noto_sans_regular') format('svg');
+}
