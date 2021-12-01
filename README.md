@@ -4,14 +4,46 @@ This is a fork of a popular fontface Noto developed by Google in colaboration wi
 ## Installation
 For personal use simply [download](https://github.com/Anbani/noto/archive/refs/heads/main.zip) the archive from this repository. 
 
-For web developers you may inject Anbani Noto webfonts via these css snippets:
+For web developers you may use Anbani Noto fonts by including jsdelivr cdn links into your `.html`:
+```html
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Anbani/noto@main/css/AnbaniNotoSans.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Anbani/noto@main/css/AnbaniNotoSerif.css">
 ```
-[JSDELIVR LINK]
+or `@import` the css directly into your `.css`
+```css
+@import url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/css/AnbaniNotoSans.css');
+@import url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/css/AnbaniNotoSerif.css');
 ```
+or inject `@font-face` snippet into your `.css` file to minify number of requests.
+```css
+@font-face {
+    font-family: 'Anbani Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/fonts/AnbaniNotoSans-Regular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/fonts/AnbaniNotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/fonts/AnbaniNotoSans-Regular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/fonts/AnbaniNotoSans-Regular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/fonts/AnbaniNotoSans-Regular.ttf') format('truetype'),
+         url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/fonts/AnbaniNotoSans-Regular.svg#anbani_noto_sans_regular') format('svg');
+}
+
+@font-face {
+    font-family: 'Anbani Noto Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/fonts/AnbaniNotoSerif-Regular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/fonts/AnbaniNotoSerif-Regular.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/fonts/AnbaniNotoSerif-Regular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/fonts/AnbaniNotoSerif-Regular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/fonts/AnbaniNotoSerif-Regular.ttf') format('truetype'),
+         url('https://cdn.jsdelivr.net/gh/Anbani/noto@main/fonts/AnbaniNotoSerif-Regular.svg#anbani_noto_serif_regular') format('svg');
+}
 
 ```
-[JSDELIVR LINK]
-```
+
 
 
 ## Why?
